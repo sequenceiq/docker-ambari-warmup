@@ -10,4 +10,4 @@ RUN wget http://xenia.sote.hu/ftp/mirrors/www.apache.org/maven/maven-3/3.3.3/bin
 ENV M2_HOME /usr/local/maven
 ENV PATH $PATH:$M2_HOME/bin
 
-RUN cd /var/lib/ambari-server/resources/stacks/HDP/2.2/services && git clone https://github.com/doktoric/zeppelin-stack.git
+RUN cd /var/lib/ambari-server/resources/stacks/HDP/2.2/services && git clone https://github.com/sequenceiq/zeppelin-stack.git
