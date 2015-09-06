@@ -1,4 +1,4 @@
-FROM sequenceiq/ambari:2.1.0-consul
+FROM sequenceiq/ambari:2.1.1-v1
 MAINTAINER SequenceIQ
 
 ADD HDP.repo /etc/yum.repos.d/
