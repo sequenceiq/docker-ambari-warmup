@@ -12,3 +12,4 @@ ENV M2_HOME /usr/local/maven
 ENV PATH $PATH:$M2_HOME/bin
 
 RUN cd /var/lib/ambari-server/resources/stacks/HDP/2.2/services && git clone https://github.com/sequenceiq/zeppelin-stack.git
+RUN cd /var/lib/ambari-server/resources/stacks/HDP/2.2/services && git clone https://github.com/abajwa-hw/ambari-nifi-service.git NIFI
