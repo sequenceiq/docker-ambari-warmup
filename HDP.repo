@@ -1,6 +1,7 @@
 [HDP-2.3]
 name=HDP-2.3
-baseurl=http://public-repo-1.hortonworks.com/HDP/centos6/2.x/updates/2.3.0.0
+baseurl=http://private-repo-1.hortonworks.com/HDP/centos6/2.x/updates/2.3.0.1
+
 path=/
 enabled=1
 gpgcheck=0

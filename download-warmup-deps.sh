@@ -3,7 +3,8 @@
 #The exit of download_deps needs to be trapped because the Docker build exits
 
 function download_deps {
-  yum install -y yum-plugin-downloadonly
-  yum install -y --downloadonly hadoop_2_2_* slider_2_2_* storm_2_2_* hadoop_2_2_*-yarn hadoop_2_2_*-mapreduce snappy snappy-devel hadoop_2_2_*-libhdfs ambari-log4j falcon_2_2_* flume_2_2_* httpd python-rrdtool-1.4.5 libganglia-3.5.0-99 ganglia-devel-3.5.0-99 ganglia-gmetad-3.5.0-99 ganglia-web-3.5.7-99.noarch ganglia-gmond-3.5.0-99 ganglia-gmond-modules-python-3.5.0-99 hbase_2_2_* hive_2_2_* mysql mysql-server kafka_2_2_* knox_2_2_* extjs oozie_2_2_* pig_2_2_* sqoop_2_2_* tez_2_2_* fping nagios-plugins-1.4.9 nagios-3.5.0-99 nagios-www-3.5.0-99 nagios-devel-3.5.0-99
+  #yum install -y yum-plugin-downloadonly
+  #yum install -y --downloadonly 
+  yum install -y hadoop_2_3_* hadoop_2_3_*-hdfs hadoop_2_3_*-mapreduce hadoop_2_3_*-yarn hadoop_2_3_*-libhdfs pig_2_3_* accumulo_2_3_* hive_2_3_* sqoop_2_3_* hbase_2_3_* datafu_2_3_* spark_2_3_* knox_2_3_* slider_2_3_* storm_2_3_* atlas-metadata_2_3_* atlas-metadata*-hive-plugin phoenix_2_3_* tez_2_3_* oozie_2_3_* falcon_2_3_* mysql-connector-java extjs ambari-metrics-collector ambari-metrics-monitor ambari-metrics-hadoop-sink rpcbind snappy snappy-devel mysql-server
 }
 trap download_deps EXIT
